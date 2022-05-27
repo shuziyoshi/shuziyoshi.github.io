@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Projects page</title>
+   <link rel="stylesheet" href="style/site.css"></head>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <div class="wrapper">
+   <div class="box header"><h1>My Map</h1></div>
+   <div class="box sidebar"> 
+      <nav id="navigation">
+         <ul id="mainnav">
+             <li id="navpart1" class="d1"><a href="index.html">Home</a></li>
+             <li id="navpart2" class="d2"><a href="realbus.html">Real Time Bus Tracking </a></li>
+             <li id="navpart3" class="d3"><a href="pacman.html">Pacman</a></li>
+             <li id="navpart4" class="d4"><a href="new.html">Eyes on Mouse</a></li>
+             <li id="navpart4" class="d5"><a href="Map.html">Projects page</a></li>
+         </ul>
+   
+     </nav>
+
+     Bio
+   </div>
+   <div class="box content">Content
+       <br /> <body id="main">
+
+         <div id='map_container'></div>
+         
+         </div>
+   
+</div>
+  <body>
+   <div id="area"></div>
+ </body>
+ <script src="scripts/walk.js"></script>
+
+<style>
+
+
+#map_container {
+   width: 90%;
+   height: 600px;
+}
+#area {
+  position: relative;
+ 
+  margin: 1em auto;
+}
+.ball {
+  background-color: black;
+  position: absolute;
+  display: inline-block;
+  border-radius: 50%;
+}
+</style>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin=""/>
+
+ <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+   integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+   crossorigin=""></script>
+  
+<!--my styles-->
+
+
+
+
+
+<script src ="scripts/map.js"></script>
+
+</body>
+
+
+   
+<div class="box footer">
+   
+  
+</div>
+
+   <style>
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.content {
+  grid-area: content;
+}
+
+.header {
+  grid-area: header;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+
+  grid-template-areas:
+    '....... header header'
+    'sidebar content content'
+    'footer  footer  footer';
+  background-color: #fff;
+  color: #444;
+}
+
+.box {
+  background-color: whitesmoke;
+  color: #fff;
+  
+  padding: 10px;
+  font-size: 100%;
+}
+
+.header,
+.footer {
+  background-color: #999;
+}
+
+
+
+   </style>
+
+
+
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+  
+
+    <div id="myDIV" class="header">
+        <h2>Quant Review List</h2>
+        
+        <input type="text" id="myInput" placeholder="Wrong qeustion...">
+        <span onclick="newElement()" class="addBtn">Add</span>
+      </div>
+      
+      <ul id="myUL">
+        <li><p>Q. For a two-sided confidence interval, an increase in the degree of confidence will result in:a wider confidence interval
+        </p>
+        <p>As the degree of confidence increases (e.g., from 95% to 99%), a given confidence interval will become wider. A confidence interval is a range for which one can assert with a given probability 1 − α, called the degree of confidence, that it will contain the parameter it is intended to estimate.</p>
+        </li>
+        <li class="checked"><p>
+          Q. An increase in sample size is most likely to result in a:decrease in the standard error of the sample mean.
+        </p>
+        <p>All else being equal, as the sample size increases, the standard error of the sample mean decreases and the width of the confidence interval also decreases.</p>
+      </li>
+        <li> <p>Q. A random number between zero and one is generated according to a continuous uniform distribution. What is the probability that the first number generated will have a value of exactly 0.30?
+            0%</p>
+            <p>The probability of generating a random number equal to any fixed point under a continuous uniform distribution is zero.
+            </p> </li>
+        <li><p>Q. A limitation of Monte Carlo simulation is:its inability to independently specify cause-and-effect relationships.
+            <p>Monte Carlo simulation is a complement to analytical methods. Monte Carlo simulation provides statistical estimates and not exact results. Analytical methods, when available, provide more insight into cause-and-effect relationships.</p>
+        </li>
+        <li><p>Q. In contrast to normal distributions, lognormal distributions:have outcomes that cannot be negative.
+            <p>By definition, lognormal random variables cannot have negative values.The lognormal distribution is also right skewed, which is a useful property in describing asset prices.</p>
+        </p></li>
+        <li><p>Q. An analyst is examining a large sample with an unknown population variance. Which of the following is the most appropriate test to test the hypothesis that the historical average return on an index is less than or equal to 6%? One-sided t-test</p>
+        
+        <p>If the population sampled has unknown variance and the sample is large, a z-test may be used. Hypotheses involving “greater than” or “less than” postulations are one sided (one tailed). In this situation, the null and alternative hypotheses are stated as H0: μ ≤ 6% and Ha: μ > 6%, respectively. A one-tailed t-test is also acceptable in this case, and the rejection region is on the right side of the distribution.</p></li>
+        <li><p>
+            
+            Q. Which one of the following statements is true about non-probability sampling?</p>
+        <p>Because non-probability sampling is dependent on factors other than probability considerations, such as a sampler’s judgment or the convenience to access data, there is a significant risk that non-probability sampling might generate a non-representative sample</p>
+        </li>
+        <li><p>
+            Q. The best approach for creating a stratified random sample of a population involves:drawing simple random samples from each subpopulation in sizes proportional to the relative size of each subpopulation.</p>
+        <p>Stratified random sampling involves dividing a population into subpopulations based on one or more classification criteria. Then, simple random samples are drawn from each subpopulation in sizes proportional to the relative size of each subpopulation. These samples are then pooled to form a stratified random sample.</p>
+        </li>
+        <li><p>Q. An estimator with an expected value equal to the parameter that it is intended to estimate is described as:unbiased</p>
+        <p>An unbiased estimator is one for which the expected value equals the parameter it is intended to estimate.</p>
+        </li>
+        <li><p>Q. Which sampling bias is most likely investigated with an out-of-sample test? Data-mining bias</p>
+        <p>An out-of-sample test is used to investigate the presence of data-mining bias. Such a test uses a sample that does not overlap the time period of the sample on which a variable, strategy, or model was developed.</p></li>
+        <li><p>
+          Q. In a frequency distribution, the absolute frequency measure:represents the actual number of observations counted for each unique value of the variable.
+          <p>In a frequency distribution, the absolute frequency, or simply the raw frequency, is the actual number of observations counted for each unique value of the variable. </p>
+        </p></li>
+        <li><p>Q. A bar chart that orders categories by frequency in descending order and includes a line displaying cumulative relative frequency is referred to as a: Pareto Chart.</p>
+        <p>A bar chart that orders categories by frequency in descending order and includes a line displaying cumulative relative frequency is called a Pareto Chart. A Pareto Chart is used to highlight dominant categories or the most important groups.</p></li>
+        <li><p>Q. A tree-map is best suited to illustrate:value differences of categorical groups.</p>
+        <p>A tree-map is a graphical tool used to display and compare categorical data. It consists of a set of colored rectangles to represent distinct groups, and the area of each rectangle is proportional to the value of the corresponding group. </p>
+        <img class="responsive-img" src=" cfa.png">  
+      </li>
+        <li><p>Q. In the step “stating a decision rule” in testing a hypothesis, which of the following elements must be specified? Power of a test</p>
+        <p>The critical value in a decision rule is the rejection point for the test. It is the point with which the test statistic is compared to determine whether to reject the null hypothesis, which is part of the fourth step in hypothesis testing.</p></li>
+      <li><p>
+        Q. Which of the following statements regarding a one-tailed hypothesis test is correct?
+
+        A one-tailed test more strongly reflects the beliefs of the researcher than a two-tailed test.
+        
+        One-tailed tests in which the alternative is “greater than” or “less than” represent the beliefs of the researcher more firmly than a “not equal to” alternative hypothesis.
+        
+      </p></li>
+      
+
+      <li><p>
+        Q. A hypothesis test for a normally distributed population at a 0.05 significance level implies a:
+
+5% critical value rejection region in a tail of the distribution for a one-tailed test.
+
+For a one-tailed hypothesis test, there is a 5% rejection region in one tail of the distribution.
+
+      </p></li>
+     
+      <li><p>
+        Q. The level of significance of a hypothesis test is best used to:define the test’s rejection points.
+        The level of significance is used to establish the rejection points of the hypothesis test.
+      </p></li>
+      
+      
+      </ul>
+
+
+<style>
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Style the header */
+.header {
+  background-color: black;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
+.responsive-img {
+max-width: 100%;
+  height: auto;
+
+}
+</style>
+  
+   
+
+    <script>
+    // Create a "close" button and append it to each list item
+        var myNodelist = document.getElementsByTagName("LI");
+        var i;
+        for (i = 0; i < myNodelist.length; i++) {
+          var span = document.createElement("SPAN");
+          var txt = document.createTextNode("\u00D7");
+          span.className = "close";
+          span.appendChild(txt);
+          myNodelist[i].appendChild(span);
+        }
+        
+        // Click on a close button to hide the current list item
+        var close = document.getElementsByClassName("close");
+        var i;
+        for (i = 0; i < close.length; i++) {
+          close[i].onclick = function() {
+            var div = this.parentElement;
+            div.style.display = "none";
+          }
+        }
+        
+        // Add a "checked" symbol when clicking on a list item
+        var list = document.querySelector('ul');
+        list.addEventListener('click', function(ev) {
+          if (ev.target.tagName === 'LI') {
+            ev.target.classList.toggle('checked');
+          }
+        }, false);
+        
+        // Create a new list item when clicking on the "Add" button
+        function newElement() {
+          var li = document.createElement("li");
+          var inputValue = document.getElementById("myInput").value;
+          var t = document.createTextNode(inputValue);
+          li.appendChild(t);
+          if (inputValue === '') {
+            alert("You must write something!");
+          } else {
+            document.getElementById("myUL").appendChild(li);
+          }
+          document.getElementById("myInput").value = "";
+        
+          var span = document.createElement("SPAN");
+          var txt = document.createTextNode("\u00D7");
+          span.className = "close";
+          span.appendChild(txt);
+          li.appendChild(span);
+        
+          for (i = 0; i < close.length; i++) {
+            close[i].onclick = function() {
+              var div = this.parentElement;
+              div.style.display = "none";
+            }
+          }
+        }</script>
+
+<div>
+<nav id="navigation">
+    <ul id="mainnav"><li><a href="about.html">Back to main page </a></li>
+       
+    
+    </ul></nav>
+
+<style>  #navigation a:hover {
+    color: #000066;
+    background-color: #ffffff;
+  }
+  
+  #navigation ul#mainnav li a {
+    color: #006;
+    display: block;
+    background-color: #ccd;
+    border-top: 1px none #333;
+    border-right: 1px solid #333;
+    border-bottom: thin dotted #333;
+    border-left: 5px solid #333;
+    text-decoration: none;
+    padding: 2px 2px 2px 0.5em;
+  }
+  
+  #navigation ul#mainnav li a:hover {
+    color: #fff;
+    background-color: #006;
+    border-top: 1px outset #333;
+    border-right: 1px outset #333;
+    border-bottom: 1px outset #333;
+    border-left: 5px outset #333;
+  }
+  
+  #navigation ul#mainnav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #navigation ul#mainnav li {
+    margin: 0;
+    border-top: 1px none #333;
+  }
+  
+  #navigation #mainnav #iamhere a,
+  #navigation #mainnav #iamhere a:hover {
+    background-color: white;
+    color: #006;
+    border-top: 1px outset #333;
+    border-right: 1px outset #333;
+    border-bottom: 1px outset #333;
+    border-left: 5px outset blue;
+  }</style>
+</div>

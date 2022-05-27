@@ -1,0 +1,154 @@
+
+
+body {
+  margin: 40px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.content {
+  grid-area: content;
+}
+
+.header {
+  grid-area: header;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
+
+  /* TODO: Define the grid-template-columns and grid-template-areas values here. */
+ 
+  grid-template-areas:
+    '....... header header'
+    'sidebar content content'
+    'footer  footer  footer';
+}
+
+.box {
+  background-color: #0000ff;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  
+}
+
+.header,
+.footer {
+  background-color: #999;
+}
+
+
+
+
+
+#navigation {
+  font-size: 1.8em;
+  float: left;
+  margin-right: 2em;
+  text-decoration: none;
+  color: white;
+  font-family: arial, helvetica, sans-serif;
+  margin-bottom: 1em;
+  
+}
+
+#navigation a:link,
+#navigation a:visited,
+#navigation a:active {
+  text-decoration: none;
+  color: white;
+}
+
+#navigation a:hover {
+  color: #000066;
+  background-color: #ffffff;
+}
+
+#navigation ul#mainnav li a {
+  color: #006;
+  display: block;
+  background-color: #ccd;
+  border-top: 1px none #333;
+  border-right: 1px solid #333;
+  border-bottom: thin dotted #333;
+  border-left: 5px solid #333;
+  text-decoration: none;
+  padding: 2px 2px 2px 0.5em;
+}
+
+#navigation ul#mainnav li a:hover {
+  color: #fff;
+  background-color: #006;
+  border-top: 1px outset #333;
+  border-right: 1px outset #333;
+  border-bottom: 1px outset #333;
+  border-left: 5px outset #333;
+}
+
+#navigation ul#mainnav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navigation ul#mainnav li {
+  margin: 0;
+  border-top: 1px none #333;
+}
+
+#navigation #mainnav #iamhere a,
+#navigation #mainnav #iamhere a:hover {
+  background-color: white;
+  color: #006;
+  border-top: 1px outset #333;
+  border-right: 1px outset #333;
+  border-bottom: 1px outset #333;
+  border-left: 5px outset blue;
+}
+
+
+
+.eyes {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+.eye {
+  width: 240px;
+  height: 120px;
+  background: #fff;
+  display: inline-block;
+  margin: 40px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.ball {
+  width: 80px;
+  height: 80px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
