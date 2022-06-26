@@ -1,0 +1,82 @@
+
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+      
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <title>Document</title>
+        <link rel="stylesheet" href="styles/site.css" />
+        </head> 
+        
+        <body>
+        <div>  <table>
+            <tr>
+              <th>Student Name</th>
+              <th>Age</th>
+              <th>Phone #</th>
+              <th>Address</th>
+            </tr> 
+            <tr>
+              <td>John</td>
+              <td>19</td>
+              <td>455-983-0912</td>
+              <td>123 Ave, San Francisco, CA, 94011</td>
+            </tr> 
+            
+             <tr>
+              <td>Alex</td>
+              <td>21</td>
+              <td>455-345-0912</td>
+              <td>123 Ave, San Francisco, CA, 94011</td>
+            </tr>     
+            <tr>
+              <td>Josh</td>
+              <td>21</td>
+              <td>455-345-0912</td>
+              <td>123 Ave, San Francisco, CA, 94011</td>
+            </tr>     
+            <tr>
+              <td>Matt</td>
+              <td>23</td>
+              <td>455-345-0912</td>
+              <td>123 Ave, San Francisco, CA, 94011</td>
+            </tr>     
+
+          </table><div>
+
+            <label> 4. A dropdown list with the following options(please find the screenshot/mockup below)
+            </label>
+              <select name="cars" id="cars">
+                <option >Newark</option>
+                <option >Santa Clara</option>
+                <option >Union City</option>
+                <option >Albany</option>
+                <option value="audi">Daly City</option>
+                
+                <option value="audi">San Jose</option>
+              </select>
+              <br><br>
+            
+              <div class="search">
+                <div class="icon">
+                <div class="input">
+
+                <script>
+                  const icon = document.querySelector('.icon');
+                  const search = document.querySelector('.search');
+                  icon.onclick = function(){
+                    search.classList.toggle('active')
+                  }
+                </script>
+
+                <a class="active">2. A Google style text input box with placeholder</a>
+                
+                <input type="text" placeholder="Search.." id="mysearch">
+              </div>
+              </div>
+            </div>
+              
+            
+        </body>
+        </html>
